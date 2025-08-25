@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <title>Velura Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Floating pastel planets */
+    .planet {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 15s infinite alternate;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0) scale(1); }
+      50% { transform: translateY(-20px) translateX(10px) scale(1.05); }
+      100% { transform: translateY(0) translateX(0) scale(1); }
+    }
+    /* Fade-in for testimonials */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 relative" style="background: linear-gradient(135deg, #ffe0f0, #f3e6ff, #fce4f9); min-height: 100vh; overflow-x: hidden;">
+
+  <!-- Floating Planets -->
+  <div class="planet bg-pink-300 w-32 h-32 top-10 left-10"></div>
+  <div class="planet bg-purple-300 w-24 h-24 top-64 right-20 animation-delay-2s"></div>
+  <div class="planet bg-yellow-200 w-16 h-16 top-1/2 left-1/3 animation-delay-4s"></div>
+
+  <!-- Header with Logo -->
+  <header class="fixed top-0 left-0 w-full bg-white/50 backdrop-blur-md shadow-md z-50 flex items-center justify-between py-4 px-10">
+        <p1>Velura Store</p1>
+    <img src="assets/logo.png" alt="Velura Logo" class="h-20"></header>
+    <nav class="space-x-6 text-gray-800 font-medium">
+      <a href="#products" class="hover:text-purple-400 transition">Products</a>
+      <a href="#testimonials" class="hover:text-purple-400 transition">Testimonials</a>
+      <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-28" style="background: linear-gradient(135deg, #ffd6e8, #e9d9ff, #fbdfff);">
+    <h1 class="text-4xl font-serif font-bold text-gray-800">✨ Curated Finds, Just for You ✨</h1>
+    <p class="mt-3 text-lg text-gray-600">Luxury meets pastel — shop unique products with ease</p>
+    <a href="#products" 
+       class="mt-6 inline-block bg-gradient-to-r from-pink-300 to-purple-300 text-white font-medium py-3 px-8 rounded-full shadow-md hover:scale-105 transition">
+      Shop Now
+    </a>
+  </section>
+  <br></br>
+  <br></br>
+
+  <B><I><center><P1 class="text-4xl font-serif font-bold text-gray-800"> LATEST COLLECTIONS </P1></center></I></B>
+
+
+  <!-- Products Grid -->
+  <main id="products" class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+
+    <!-- 60 Placeholder Product Cards -->
+    <!-- Cards 1-60 -->
+    <!-- Only showing first 3 as pattern example; rest continue incrementing -->
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag1.png" alt="Product 1" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">A classic Hand Designed Handbag</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 1"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag.2.png" alt="Product 2" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1"> Blush Bloom Floral Handbag , Elegant Top-Handle Tote</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹550</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 2"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag3.png" alt="Product 3" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Luxury Chain Bag – Evening Crossbody Clutch</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹750</p>
+
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 3"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag4.png" alt="Product 4" class="w-full h-55 object-cover rounded-t-2xl">
+      <p2 class="text-gray-500 text-sm mt-1">Luxury Side Bags</p2>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹600</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 4"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag5.png" alt="Product 5" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Gorgeous Versaltile Womens Slingbag </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹650</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 5"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag6.png" alt="Product 6" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Ethic Patchwork Shoulder Bag with Wallet | stylish & spacious | Suitable for daily use</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1100</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 6"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag7.png" alt="Product 7" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Classic Versatile Womens Tote Bag </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹250</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 7"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag8.png" alt="Product 8" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Gorgeous Alluring Womens Bagpack</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 8"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/bag9.png" alt="Product 9" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Stylish and Spacious Womens Sling Bag for Everyday use</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹500</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 9"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti1.png" alt="Product 10" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Printed Designer Trending Kurti</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 10"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti2.png" alt="Product 11" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Printed Designer Trending Kurti</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 11"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti3.png" alt="Product 12" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Printed Designer Trending Kurti</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 12"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti4.png" alt="Product 13" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Printed Designer Trending Kurti</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 13"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti5.png" alt="Product 14" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Short Embroidery Kurti | Trending Kurti's</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 14"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti7.png" alt="Product 15" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Designer Cool Printed , Party Wear Dress</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1200</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 15"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti8.png" alt="Product 16" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Printed Designer , Party Wear Dress</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1200</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 16"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti9.png" alt="Product 17" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Ethnic Motifs Printed Flared Sleeve Fit and Flare long Dress</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1200</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 17"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/kurti10.png" alt="Product 18" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Stylish Modern Women Long Dress</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1200</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 18"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/dress1.png" alt="Product 19" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Printed Rayon short kurtis </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 19"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/ear1.png" alt="Product 20" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Earrings 4 pack combo | Girls Earrings | designer Earrings</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹169</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 20"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/ear2.png" alt="Product 21" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Earrings 4 pack combo | Girls Earrings | designer Earrings</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹189</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 21"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/ear3.png" alt="Product 22" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Earrings 6 pack combo | Girls Earrings | designer Earrings</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹250</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 22"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/ear4.png" alt="Product 23" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Earrings 4 pack combo | Girls Earrings | designer Earrings</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹189</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 23"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f1.png" alt="Product 24" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Stylish Flat Sandal </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹450</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 24"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f2.png" alt="Product 25" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Stylish Flat Sandal</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹450</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 25"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f3.png" alt="Product 26" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Stylish Flat Sandal</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹450</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 26"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f4.png" alt="Product 27" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Stylish and Comfortable Wedge Fashion Heel Sandals </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 27"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f5.png" alt="Product 28" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Heel Sandals & confortable and Stylish </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹740</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 28"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f6.png" alt="Product 29" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Flat Sandals</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹399</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 29"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/a1.png" alt="Product 30" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Fancy Designer Metal Belt Analog Watch with Black Dial and Diamond </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹899</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 30"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/a2.png" alt="Product 31" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Fancy Designer Metal Belt Analog Watch with White Dial and Diamond</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹899</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 31"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/a3.png" alt="Product 32" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens classic quartz watch</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹600</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 32"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/a4.png" alt="Product 33" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Boss lady Classy Watch</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹750</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 33"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/b2__1_-removebg-preview.png" alt="Product 34" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">A5 Cute Diary for Girls | Unruled Plain notebook  for writing , Drawing , journaling </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹299</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 34"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/b3__1_-removebg-preview.png" alt="Product 35" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Wire Bound Spiral Printed Notebook with white unruled plane pages</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹210</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 35"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/j1.png" alt="Product 36" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Newyork Hoodie |Stylish Designer| Womens Sweatshirts </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 36"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/j2.png" alt="Product 37" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Ultra warm and cozy Hoodie</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1200</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 37"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/j3.png" alt="Product 38" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Zipper hoodie for womens </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 38"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/j4.png" alt="Product 39" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Hype Thread Trendy Fashionable Printed Fleece Sweatshirt </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹699</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 39"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/j5.png" alt="Product 40" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Zipper hoodie for womens</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 40"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/l1.png" alt="Product 41" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Cotton Darkblue Wideleg Womens Straight Baggy Jeans</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹550</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 41"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/l2.png" alt="Product 42" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Navy Straight Jeans</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹600</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 42"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/l3.png" alt="Product 43" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Arctic Chill Baggy Jeans | Teal blue 2 denim knee cuts </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹899</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 43"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/l4.png" alt="Product 44" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Wideleg Cream Denim Jeans</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹799</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 44"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+     <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/l5.png" alt="Product 45" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Striped Track Pants | Combo of 2 </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1600</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 45"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+     <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/l6.png" alt="Product 46" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Striped Track Pants | Gym pants  </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹999</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 46"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+     <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/d1.png" alt="Product 47" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens 6 Pockets Dark jeans Cargo</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1190</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 47"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+     <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/d2.png" alt="Product 48" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">98 DEGREE NORTH |  womens Straight Fit Blast washed Jeans</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1500</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 48"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/b1 (1).png" alt="Product 49" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens 6 pockets Trouser</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹600</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 49"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/k1.png" alt="Product 50" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Jogger for Womens | Printed Joggers for Gym </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹850</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 50"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/k2.png" alt="Product 51" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Stylish Printed Joggers for Womens</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹700</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 51"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/hh1.png" alt="Product 52" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Stylish Printed Jogger pants ,</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹750</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 52"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/x1.png" alt="Product 53" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Labubu Oversized Black Tshirt</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 53"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/x2.png" alt="Product 54" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Oversized Black Tshirt </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹599</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 54"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/x3.png" alt="Product 55" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Womens Labubu Printed oversized Tshirt</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹450  </p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 55"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/g65.png" alt="Product 56" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Oversized Tshirts for Womens </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹499</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 56"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/g67.png" alt="Product 57" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Pretty Fashionista Women | Oversized Tshirts</p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹499</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 57"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/f45.png" alt="Product 58" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Cute coffee Sweatshirt for womens </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹899</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 58"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/g5868.png" alt="Product 59" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Stylish white Happy Hoodie </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹1200</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 59"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+      <div class="rounded-2xl shadow-md p-5 transition hover:shadow-lg" style="background: linear-gradient(135deg, #fff0f6, #f7f0ff); border: 1px solid #f0d9ff;">
+      <img src="assets/jjji.png" alt="Product 60" class="w-full h-55 object-cover rounded-t-2xl">
+      <p class="text-gray-500 text-sm mt-1">Crop Hoodie for womens </p>
+      <p class="mt-2 font-bold text-purple-500 text-lg">₹699</p>
+      <a href="https://wa.me/919664767599?text=Hi! I'm interested in Product 60"
+         target="_blank"
+         class="mt-4 block bg-gradient-to-r from-green-400 to-green-500 text-white text-center py-3 rounded-lg font-medium hover:shadow-md">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    
+    <!-- Repeat this block incrementing product number 4-60 -->
+    <!-- I can provide the full 60-card code as one huge block if you want exact copy-paste version -->
+  </main>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-gradient-to-r from-pink-50 via-beige-50 to-purple-50 text-center">
+    <h2 class="text-3xl font-serif font-bold text-gray-800 mb-10">What Our Customers Say</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div class="bg-white shadow-md rounded-2xl p-6 fade-in" style="border: 1px solid #f0d9ff;">
+        <p class="text-gray-600 italic">"Loved the tote bag! Super soft and the colors are dreamy 💖"</p>
+        <h3 class="mt-4 font-bold text-gray-800">— Riya S.</h3>
+      </div>
+
+      <div class="bg-white shadow-md rounded-2xl p-6 fade-in" style="border: 1px solid #f0d9ff;">
+        <p class="text-gray-600 italic">"The notebook is perfect for my sketches. Pastel vibes are amazing!"</p>
+        <h3 class="mt-4 font-bold text-gray-800">— Arjun M.</h3>
+      </div>
+
+      <div class="bg-white shadow-md rounded-2xl p-6 fade-in" style="border: 1px solid #f0d9ff;">
+        <p class="text-gray-600 italic">"Fast response on WhatsApp & the products feel premium. Highly recommend!"</p>
+        <h3 class="mt-4 font-bold text-gray-800">— Meera K.</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-purple-50 via-beige-50 to-pink-50 text-center">
+    <h2 class="text-3xl font-serif font-bold text-gray-800 mb-6">Get In Touch</h2>
+    <p class="text-gray-600 mb-6">Have questions or want to order directly? Contact us!</p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-6 mb-10">
+      <a href="https://wa.me/919664767599" target="_blank" class="bg-green-400 hover:bg-green-500 text-white font-medium py-3 px-6 rounded-full shadow-md transition">
+        WhatsApp
+      </a>
+      <a href="adsouza978@gmail.com" class="bg-indigo-400 hover:bg-indigo-500 text-white font-medium py-3 px-6 rounded-full shadow-md transition">
+        Email
+      </a>
+      <a href="https://www.instagram.com/velura_store12/" class="bg-pink-400 hover:bg-pink-500 text-white font-medium py-3 px-6 rounded-full shadow-md transition">
+        Instagram
+      </a>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="max-w-lg mx-auto bg-white/70 p-6 rounded-2xl shadow-md flex flex-col gap-4">
+      <input type="text" placeholder="Your Name" class="p-3 rounded-lg border border-gray-300" required>
+      <input type="email" placeholder="Your Email" class="p-3 rounded-lg border border-gray-300" required>
+      <textarea placeholder="Your Message" rows="4" class="p-3 rounded-lg border border-gray-300" required></textarea>
+      <button type="submit" class="bg-purple-400 hover:bg-purple-500 text-white font-medium py-3 rounded-lg transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner p-6 text-center mt-10 text-gray-500">
+    <p>Follow us on Instagram: <a href="https://www.instagram.com/velura_store12/" class="text-pink-400 hover:text-purple-500">@VeluraStore</a></p>
+    <p class="mt-2">© 2025 Velura Store. Luxury x Pastel Vibes.</p>
+  </footer>
+
+</body>
+</html>
